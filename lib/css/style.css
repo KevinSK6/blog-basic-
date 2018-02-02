@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(128, 128, 128, 0.2);
+}
+
+img {
+  width: 100%;
+}
+
+button:hover, button:focus {
+  outline: none;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 2.3em 0;
+}
+header h1 {
+  font-size: 42px;
+  line-height: 2;
+}
+header p {
+  font-size: 17px;
+  padding: 10px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.mark {
+  background: black;
+  color: white;
+  padding: 2px 4px;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 93%;
+  margin: auto;
+}
+.wrap h2 {
+  line-height: 2;
+}
+.wrap .info_public {
+  color: #333;
+  padding: 5px 0;
+}
+.wrap .info_public span {
+  color: #818181;
+}
+.wrap p {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.7;
+}
+.wrap .footer_public {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .footer_public button {
+  border: none;
+  background: none;
+  border: 1px solid #CCCBCB;
+  line-height: 2.4;
+  padding: 0 14px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.wrap .footer_public button:hover {
+  background: #ddd;
+}
+.wrap .footer_public button:active {
+  transform: scale(0.95);
+}
+.wrap .footer_public h4 {
+  cursor: pointer;
+}
+.wrap .footer_public h4 .mark {
+  margin: 0 2px;
+  padding: 3px 8px;
+}
+
+.content {
+  width: 97%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    display: block;
+  }
+}
+.content .container_public {
+  width: 62%;
+}
+@media screen and (max-width: 992px) {
+  .content .container_public {
+    width: 100%;
+  }
+}
+.content .container_public .public {
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  margin-bottom: 2.44em;
+}
+.content .container_public .public img {
+  height: 320px;
+}
+.content aside {
+  width: 35%;
+}
+@media screen and (max-width: 992px) {
+  .content aside {
+    width: 100%;
+  }
+}
+.content aside .about_me, .content aside .popular_post, .content aside .content_tags {
+  background: #fff;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2), inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+.content aside .about_me h2, .content aside .about_me .name, .content aside .popular_post h2, .content aside .popular_post .name, .content aside .content_tags h2, .content aside .content_tags .name {
+  font-weight: 200;
+  font-size: 23px;
+  padding: 8px 15px;
+}
+@media screen and (max-width: 992px) {
+  .content aside .about_me h2, .content aside .about_me .name, .content aside .popular_post h2, .content aside .popular_post .name, .content aside .content_tags h2, .content aside .content_tags .name {
+    text-align: center;
+  }
+}
+.content aside .popular_post .wrap {
+  width: 100%;
+}
+.content aside .popular_post .post {
+  width: 100%;
+  transition: all 0.3s;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.content aside .popular_post .post:hover {
+  background: #ddd;
+}
+.content aside .popular_post .post .imgSmall {
+  width: 70px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+.content aside .popular_post .post h3 {
+  color: #333;
+  font-weight: 300;
+}
+.content aside .content_tags .tags {
+  width: 100%;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+.content aside .content_tags .tags span {
+  padding: 5px 8px;
+  margin: 6px 0px;
+  font-size: 13px;
+  float: left;
+  cursor: pointer;
+}
+.content aside .content_tags .tags span.active {
+  background: black;
+  color: #fff;
+}
+
+footer {
+  background: rgba(51, 51, 51, 0.8);
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+footer .wrap {
+  padding-left: 0;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  footer .wrap {
+    display: block;
+  }
+}
+footer p {
+  color: #ddd;
+  font-size: 14px;
+}
+footer p a {
+  color: #ddd;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: #fff;
+}
+footer .buttons {
+  padding-top: 0.55em;
+  padding-bottom: 2em;
+}
+@media screen and (max-width: 992px) {
+  footer .buttons {
+    padding-top: 3em;
+  }
+}
+footer .buttons p {
+  float: right;
+}
+footer .buttons button {
+  border: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  line-height: 3;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 27px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer .buttons button:hover {
+  background: #ddd;
+  color: #333;
+}
+footer .buttons button.dissmis {
+  background: rgba(221, 221, 221, 0.3);
+  cursor: no-drop;
+}
+footer .buttons button.dissmis:hover {
+  color: white;
+}
+footer .content_form {
+  width: 25%;
+}
+@media screen and (max-width: 992px) {
+  footer .content_form {
+    display: block;
+    width: 100%;
+  }
+}
+footer .content_form form {
+  width: 100%;
+  color: #ddd;
+  font-family: "Raleway", sans-serif !important;
+}
+footer .content_form form h2 {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+footer .content_form form .group-input {
+  width: 100%;
+  overflow: hidden;
+}
+footer .content_form form .group-input #email {
+  display: block;
+  width: 100%;
+  padding: 4px 10px;
+}
+footer .content_form form .group-input #email:focus {
+  outline: none;
+}
+footer .content_form form .group-input #email::-webkit-input-placeholder {
+  transition: all 0.4s;
+  opacity: 1;
+}
+footer .content_form form .group-input #email:focus::-webkit-input-placeholder {
+  transform: translateX(39px);
+  opacity: 0;
+}
+footer .content_form form .group-input .submit {
+  border: 1px solid #ddd;
+  background: none;
+  padding: 7px;
+  color: #ddd;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer .content_form form .group-input .submit:hover {
+  background: #333;
+  border-color: #333;
+}
+footer .content_form form .group-input .submit:focus {
+  transform: scale(0.95);
+}
+
+/*# sourceMappingURL=style.css.map */
